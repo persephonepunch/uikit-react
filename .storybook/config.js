@@ -57,6 +57,7 @@ function loadStories() {
   require('../src/stories/Dropdown')
   require('../src/stories/Modal')
   require('../src/stories/Notify')
+  require('../src/stories/OffCanvas')
   require('../src/stories/Input')
 }
 
