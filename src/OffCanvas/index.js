@@ -41,7 +41,7 @@ export default class OffCanvas extends Component {
     const { children, animationMode } = this.props
     const { isOpen } = this.state
     const className = cx('uk-offcanvas', {
-      'uk-open': this.state.shouldDisplay && this.state.isOpen,
+      'uk-open': this.state.shouldDisplay && this.state.isOpen && this.props.animationMode !== 'push',
       'uk-offcanvas-overlay uk-open': this.state.shouldDisplay && this.state.isOpen && this.props.animationMode === 'push',
     })
     const style = {
